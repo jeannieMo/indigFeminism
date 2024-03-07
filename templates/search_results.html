@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+<script src="ice_cream.js"></script>
+<b>Showing Results for {{input}}!</b>
+
+{% for x in entries %}
+<a href="{{ x.webPage }}">
+    <div>
+        {{ x.name }}
+    </div>
+    <div>
+        <img src="{{ url_for('static', filename=x.image) }}" class="smallImgs">
+    </div>
+</a>
+<hr> 
+{% endfor %}
+<div>
+   There are {{ entries_len }} results
+</div>
+{% endblock %}
+
+
+

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+<div class="missionStatement">Press</div>
+<div class="container"> 
+    <div class="row">
+        <div class="col-md-8 missionWords">
+            The most up to date stories and news, provided by our dedicated audience. <br>
+            <em>Las historias y noticias más actualizadas, proporcionadas por nuestra audiencia dedicada</em>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <a href="https://www.culturalsurvival.org/news/environmental-defender-guadalupe-campanur-tapia-murdered-mexico">
+                <img src="/static/tapia.jpg" class="aLittleBigger">
+                <div class="image-text">
+                    Environmental Defender Guadalupe Campanur Tapia Murdered in Mexico
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.tlachinollan.org/invisibles-hasta-la-muerte/">
+                <img src="/static/invisiblesHasta.png" class="smallImgs">
+                <div class="image-text">
+                    "Invisibles hasta la muerte"
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="row missionStatement">
+        Reports and more Information:
+    </div>
+    <div class="row">
+        <div class="col-md-7" id="container-row">
+        </div>
+    </div>
+</div>
+
+
+<script src="ice_cream.js"></script>
+
+<!-- Include Bootstrap CSS and JavaScript -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}

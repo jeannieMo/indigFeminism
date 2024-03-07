@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+<div class="storeName">
+    <b>{{item.name}}</b>
+</div>
+    <div>
+        <img src="{{ url_for('static', filename=item.image) }}" class="smallImgs">
+    </div>
+<div>
+   <span class="subInfo"><b>Type of Work:</b> </span>{{item.typeWork}}
+</div>
+<div>
+    <span class="subInfo"><b>Date Submitted:</b> </span>{{item.date}}
+ </div>
+<br>
+<div>
+
+</div>
+<br>
+<div class="middle-text">
+    <b>{{item.name}}</b><br><br>
+     {{item.text}}
+</div>
+<br>
+<div>
+    <b>Related Readings:</b>
+    {% for shop_name, shop_page in item.similarCulturalInspiration.items() %}
+    <a href="{{ shop_page }}">
+        <div>
+            {{ shop_name }}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock %}
+<script src="ice_cream.js"></script>

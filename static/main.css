@@ -1,0 +1,83 @@
+    #hello_div{
+        padding-top:  10px;
+        padding-bottom:  10px;
+        color: rgb(220, 76, 100);
+    }
+    div,p {
+        margin-left: 10px;
+    }
+    span {
+        color: red;
+    }
+    .clickable-div {
+        cursor: pointer; 
+        display: inline-block; 
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .clickable-div img {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 200px; 
+        height: auto;
+    }
+    .smallImgs{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 250px; 
+        height: auto;
+    }
+    .aLittleBigger{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 335px; 
+        height: auto;
+    }
+    .storeName{
+        font-size: 30px;
+    }
+    .subInfo{
+        color: black;
+        font-size: 18px;
+    }
+    .middle-text {
+        text-align: center; 
+        margin-top: 3px; 
+    }
+    .homepageTitle{
+        font-size: 50px;
+    }
+    .smaller-image {
+        max-width: 200px; /* Example maximum width */
+        max-height: 200px; /* Example maximum height */
+    }
+    .bck-color{
+        height: 80px;
+        background-color: #636940
+    }
+    .about-title{
+        color: rgba(119, 17, 119, 0.67);
+        font-size: 50px;
+    }
+    .missionStatement{
+        padding-top: 10px;
+        font-weight: bold;
+        color: rgba(119, 17, 119, 0.67);
+        font-size: 40px;
+    }
+    .missionWords{
+        padding-top: 3px;
+        color: #636940;
+        font-size: 17px;
+    }
+    .underConstruction{
+        padding-top: 100px;
+        text-align: center;
+        color: 636940;
+        font-size: 70px;
+    }
+    .reportsAndInfo{
+        padding-top: 10px;
+        color: 636940;
+        font-size: 30px;
+    }
