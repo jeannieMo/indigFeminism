@@ -37,12 +37,13 @@
         font-size: 30px;
     }
     .subInfo{
-        color: black;
-        font-size: 18px;
+        color: gray;
+        font-style: italic;
+        font-size: 12px;
     }
-    .middle-text {
-        text-align: center; 
-        margin-top: 3px; 
+    .report-text {
+        text-align: left; 
+        margin-top: 30px; 
     }
     .homepageTitle{
         font-size: 50px;
@@ -80,4 +81,20 @@
         padding-top: 10px;
         color: 636940;
         font-size: 30px;
+    }
+    .custom-button {
+        background-color: transparent;
+        border: none;
+        color: blue; /* Change color as desired */
+        cursor: pointer;
+        font-size: 14px; /* Change font size as desired */
+    }
+    .custom-button:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+    .pressSubHeading{
+        padding-top: 10px;
+        font-weight: bold;
+        color: 636940;
+        font-size: 30px;       
     }

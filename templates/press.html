@@ -2,14 +2,21 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
-<div class="missionStatement">Press</div>
+<div class="col-md-12" style="position: relative; padding: 0; margin: 0;">
+    <img src="static/pressPic.png" alt="Picture" style="padding-bottom: 10px;padding-top: 10px;width: 100%; height: 35vh; object-fit: cover;">
+    <div class="image-text top-left" style="position: absolute; top: 100px; left: 70px; color: #EEE5E9; font-size: 50px; text-align: center;">
+        <b>Press</b><br>
+    </div> 
+</div>
 <div class="container"> 
     <div class="row">
-        <div class="col-md-8 missionWords">
+        <div class="row" style="color: #636940;"">
             The most up to date stories and news, provided by our dedicated audience. <br>
             <em>Las historias y noticias más actualizadas, proporcionadas por nuestra audiencia dedicada</em>
-
         </div>
+    </div>
+    <div class="row pressSubHeading" style="color: #636940;">
+        News Articles:
     </div>
     <div class="row">
         <div class="col-md-4">
@@ -31,11 +38,25 @@
     </div>
 
 
-    <div class="row missionStatement">
+    <div class="row pressSubHeading" style="color: #636940;">
         Reports and more Information:
     </div>
     <div class="row">
-        <div class="col-md-7" id="container-row">
+        <div class="col-md-4">
+            <a href="/whatIsIndigFem">
+                <img src="/static/whatIsIndigFem.png" class="aLittleBigger">
+                <div class="image-text">
+                    What is Indigenous Feminism?
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.tlachinollan.org/invisibles-hasta-la-muerte/">
+                <img src="/static/invisiblesHasta.png" class="smallImgs">
+                <div class="image-text">
+                   Who are mestizos?
+                </div>
+            </a>
         </div>
     </div>
 </div>

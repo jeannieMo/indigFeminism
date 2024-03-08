@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    REPORT
+</div>
+<div class="row" style="padding-top: 10px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>What is Indigenous Feminism?</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/queEsIndigFem'">en español</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='whatIsIndigFem.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div>
+    <span class="subInfo"><em> Source: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power<br>Date Submitted: 2.12.24 </em></span>
+</div>
+
+<div class = "row report-text">
+    <div class ="col-md-10">
+        De todos los feminismos que hemos estudiado en clase, el feminismo indígena ha sido, en mi opinión, el modo de feminismo más provocador de pensamiento y pionero. Por lo que entiendo, el objetivo del feminismo indígena requiere un desmantelamiento de la sociedad tal como la conocemos hoy debido a su llamado a la despatriarcalización y la descolonización, dos estructuras dentro de nuestra sociedad hoy en día que sin las cuales no puedo imaginar una sociedad. Las ideas principales que recogí al leer sobre el feminismo indígena es la importancia de la interseccionalidad dentro del feminismo y el reconocimiento de que las mujeres indígenas enfrentan una “doble opresión” debido al legado colonial. ¿Qué es el feminismo indigena? Con ayuda del articulo “Feminismos indígenas” por el sitio web modii, yo definiría el feminismo indígena como un movimiento feminista que, a diferencia del feminismo occidental que es mas individualista, prioriza el pensamiento colectivo y lucha para promover la igualdad de género dentro de un contexto indígena. La importancia de la interseccionalidad dentro del feminismo para incluir a las mujeres indígenas El feminismo indigena existe como un subproducto de los movimientos feministas monolíticos establecidos que no daban la bienvenida a las mujeres indígenas. Recurrí a la entrevista que leímos en clase,  “Aura Cumes: “Ser sujetas dialógicas demanda una escucha””, del sitio web, Rialta, por información sobre cómo los movimientos feministas modernas deben mejorar en la promoción de un enfoque interseccional de los derechos de género. La Dra. Aura Cumes pertenece al pueblo maya Kaqchikel de Guatemala y es escritora, maestra, activista y una de las voces principales femininas del movimiento indígena en América Latina. En este artículo, Cumes enfatiza la importancia de darse cuenta de que las mujeres tienen diversos orígenes y experiencias, entonces los movimientos feministas deben ampliar su visión sobre cómo es la lucha contra las fuentes de opresión femenina. Cumes detalló su experiencia de sentirse entre dos mundos: no encajar completamente en el movimiento activista maya porque los hombres negaban la existencia del machismo dentro de la cultura, y no encajar en los movimientos feministas actuales porque la trataban como a una inferior que necesitaba orientación, alineándose con los racistas y sistemas coloniales. Cumes afirma que cuando el feminismo actual “ve hacia las mujeres indígenas y negras las observa como parte de culturas atrasadas que sólo se superarán si adoptan la cultura occidental y sus principios emancipatorios como los únicos posibles”. En otras palabras, los movimientos feministas actuales, que usualmente son dirigido por mujeres de clase media y blanca, están reproduciendo el pensamiento colonial y racista de que las mujeres indígenas y minoritarias deben adaptarse a la construcción de la sociedad actual, así como adoptar su visión monolítica de cómo son los objetivos del feminismo. Como hemos discutido en clase, las mujeres socioeconómicamente empobrecidas, minorías, e indígenas experimentan más opresión que las mujeres blancas de clase media, entonces es injusto tener que hacer que esos orígenes se ajusten a esta única visión feminista. En los casos de Cumes y otras mujeres indígenas, desean desafiar y transformar las estructuras, los sistemas y las mentalidades que perpetúan el colonialismo y sus legados dentro de su lucha por el feminismo porque el colonialismo es lo que ha puesto a los cuerpos indígenas en la base del sistema racial. Como dice María Galindo, una destacada feminista latinoamericana en su libro, No Se Puede Descolonizar Despatriarcalizar, “Hay muchos movimientos estancados que estiran y eternizan su gesta de enunciación y autoafirmación y que se niegan a asumir que ese es un momento, un paso, una etapa de un proceso de liberación y no la liber
+    </div>
+</div>
+    {% endblock %}
