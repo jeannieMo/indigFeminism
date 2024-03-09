@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    INFORME
+</div>
+<div class="row" style="padding-top: 5px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Teoría del Poder Sentido</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/feltPower_en'">in english</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='feltPower.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Fuente: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Fecha Enviado: 2.12.24 </em>
+    </div>
+
+<div class="row report-text">
+    <div class="col-md-10">
+        <p>“Si estas mujeres hablaran, necesitarían crear su propio espacio (Million:269).”</p>
+
+        <p>Al crear una perspectiva feminista indígena arraigada en la teoría del sentir, nuestra organización afirma que las mujeres indígenas deben forjar sus propios caminos para la expresión y defensa dentro de sus comunidades y la sociedad en general. La Teoría del Sentir, acuñada por Dian Million, es “Una articulación abierta de experiencia e identidad que puede ser la base para el desarrollo de una teoría indígena crítica(291)<sup><a href="#fn1" id="ref1">1</a></sup>.”</p>
+        
+        <p>Partiendo del concepto de Million, enfatizamos la imperativa necesidad de que las mujeres indígenas creen espacios donde sus voces puedan ser escuchadas y sus experiencias valoradas.</p>
+        
+        <p>Como lo articula Million, si las mujeres indígenas van a expresar sus verdades, deben crear sus propias plataformas y medios de expresión. Nuestra organización se alinea con la premisa de Million de que la teoría del poder sentido proporciona un marco matizado y dinámico para entender las realidades vividas e identidades de las mujeres indígenas.</p>
+        
+        <p>En nuestro análisis, reconocemos los desafíos únicos e interseccionales que enfrentan las mujeres indígenas, derivados de siglos de colonialismo, imperialismo y opresión sistémica. Es crucial reconocer el profundo daño infligido a las mujeres indígenas y priorizar su agencia y autodeterminación en la búsqueda de justicia y empoderamiento. Al abrazar la teoría del poder sentido, nuestra organización sostiene que la existencia de las mujeres indígenas es inherentemente revolucionaria. Al reclamar sus espacios, voces y narrativas, las mujeres indígenas no solo desafían las estructuras opresivas, sino que también contribuyen al desarrollo de una teoría feminista indígena crítica. En esencia, nuestra organización se solidariza con las mujeres indígenas, abogando por su derecho a la autoexpresión y liberación colectiva. Creemos que centrar el poder sentido de las mujeres indígenas es esencial para construir un futuro más justo y equitativo para las comunidades y sociedades indígenas en todo el mundo.</p>
+    </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1">Whittaker, C. (2020), Felt power: Can Mexican Indigenous women finally be powerful?. Feminist Anthropology, 1: 288-303. https://doi.org/10.1002/fea2.12016 
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+    {% endblock %}

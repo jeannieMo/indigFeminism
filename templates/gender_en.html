@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    REPORT 
+</div>
+<div class="row" style="padding-top: 5px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Gender and Machismo</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/gender_span'">en español</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='genderMach.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Source: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Date Submitted: 2.12.24 </em>
+    </div>
+
+<div class="row report-text">
+    <div class="col-md-10">
+        <p>“Indigenous women’s mobilization in autonomous spaces clearly responds to this need to give voice to women’s distinct demands(Rousseau and Morales Hudon, 122)<sup><a href="#fn1" id="ref1">1</a></sup>.”</p>
+        <p>Despite the creation of the Zapatista movement and its goals to include and fight for women, multiple organizations have failed to fully address the issues indigenous women face. We understand the importance of having spaces for us by us. This comes after seeing organizations like CONAMI (Coordinadora Nacional de Mujeres Indígenas) where women are trained in leadership and participating in local government. We take inspiration from those before us and those fighting alongside us.</p>
+
+<p>At our organization, our goal is to actively empower Indigenous women in every aspect of their lives. We believe in centering Indigenous feminism as a framework for addressing the intersecting forms of violence faced by Indigenous women, including gender-based violence, economic marginalization, and cultural erasure. We also believe in maintaining indigenous practices with a focus on healing. By providing platforms for Indigenous women to amplify their voices, advocate for their rights, and mobilize for change, we strive to build a more just and equitable society for all Indigenous peoples in Mexico.</p>
+
+    <b>Join us in our journey toward collective empowerment and liberation.</b></p>
+                
+    </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> Rousseau, Stéphanie, and Anahi Morales Hudon. “Indigenous Women’s Struggle for Autonomy.” Indigenous Women’s Movements in Latin America: Gender and Ethnicity in Peru, Mexico, and Bolivia, PALGRAVE MACMILLAN, 2019.  
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+    {% endblock %}

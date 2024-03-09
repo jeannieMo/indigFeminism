@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    INFORME
+</div>
+<div class="row" style="padding-top: 10px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Mestizaje and Indigenismo</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/mestizo_en'">in english</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='zapatista.png') }}" class="img-fluid">
+    </div>
+</div>
+ 
+<div class= "row subInfo" style="padding-left:20px;"><em> Fuente: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+        Fecha Enviado: 2.12.24 </em>
+    </div>
+<div class = "row report-text">
+    <div class ="col-md-10">
+        <p><i>“La vara de medir la mexicanidad, ahora dentro de México, fue el mestizaje.” - Joshua Lund</i></p>
+
+        <p>En un acto deliberado de sentimiento anti-indígena, las autoridades gobernantes de México propagaron activamente el borrado del patrimonio cultural indígena y la identidad racial. En lugar de abrazar y nutrir su herencia indígena, el estado exaltó la identidad mestiza - una persona de raza mixta, especialmente una con ascendencia española e indígena - elevándola al pico de la jerarquía social mexicana. En su texto, “La lucha de las mujeres indígenas por la autonomía,” Rousseau y Morales Hudon explican que “El [estado mexicano] promovió la ideología del mestizaje, la mezcla cultural y/o biológica de los pueblos indígenas y los descendientes europeos, como la base y el origen común de la identidad nacional mexicana” (88). Por lo tanto, ya marginadas dentro de un marco societal patriarcal, las mujeres indígenas han tenido que luchar no solo contra la discriminación basada en el género, sino también contra las fuerzas del racismo y el colorismo.</p>
+        
+        <p>Este borrado se destaca por el marco legal articulado en <b>el Artículo 3 y el Artículo 6 de la Declaración de la UNESCO sobre la Raza y el Prejuicio Racial</b>, que denuncia cualquier forma de discriminación basada en la raza, el color o el origen étnico, y confía a los estados la responsabilidad de garantizar derechos humanos iguales para todos los individuos y grupos. Sin embargo, la esencia misma de la promoción del mestizaje por parte del estado mexicano va en contra de estos principios, perpetuando un estado de desigualdad y marginación. Por ejemplo, el ex Secretario de Educación Pública de México, José Vasconcelos, llegó tan lejos como para idolatrar a los mestizos como la “raza cósmica” debido a su potencial de convertirse en una raza anti-racial<sup><a href="#ref1" id="fn1">1</a></sup> - extrañamente similar al pensamiento racista subyacente de Franz Boas de que la mestización podría llevar a una nación negra, '‘mongrel’', a una verdadera ‘‘democracia racial’’.<sup><a href="#ref2" id="fn2">2</a></sup></p>
+        
+        <p><b>En lugar de fomentar una sociedad verdaderamente inclusiva y diversa, el concepto de mestizaje se convierte en una herramienta para imponer una identidad nacional más cercana al blanco, marginando las voces y experiencias indígenas. Las experiencias vividas de las mujeres indígenas continúan siendo golpeadas por el legado perdurable del mestizaje, subrayando la necesidad de una transformación societal genuina y el reconocimiento de los derechos e identidades indígenas.</b></p>        
+        
+        
+    </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> Lund, Joshua, 'Altamirano’s Burden', <i>The Mestizo State: Reading Race in Modern Mexico</i> (Minneapolis, MN, 2012; online edn, Minnesota Scholarship Online, 24 Aug. 2015), "https://doi.org/10.5749/minnesota/9780816656363.003.0002", accessed 8 Mar. 2024.</li>
+                <li id="fn2">Kamala Visweswaran, Un/common Cultures: Racism and the Rearticulation of Cultural Difference (Durham: Duke University Press, 2010) 
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+
+    {% endblock %}
+
+
+
+
+
+
+

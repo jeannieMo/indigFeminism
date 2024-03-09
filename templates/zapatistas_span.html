@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    INFORME
+</div>
+<div class="row" style="padding-top: 10px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>¿Qué es el Movimiento Zapatista?</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/whatIsZapatistaMovement'">in english</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='zapatista.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Fuente: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Fecha Enviado: 2.12.24 </em>
+    </div>
+
+<div class="row report-text">
+    <div class="col-md-10">
+        <p>Un movimiento nacido de frustraciones con el gobierno, Zapatistas o Ejército Zapatista de Liberación Nacional, EZLN es un grupo enfocado en la autonomía indígena mexicana y en derechos políticos/territoriales iguales. Directamente encendido debido a la implementación del Tratado de Libre Comercio de América del Norte (NAFTA), pero también nacido de cientos de años de frustración en torno a la privatización y dominación sobre las industrias. La creación de este movimiento ha permitido que más mujeres indígenas tengan voz y puedan crear sus propias organizaciones.</p>
+
+<p>Mientras que el EZLN se inspira en una variedad de fuentes, utiliza ideas del marxismo al criticar el capitalismo mexicano y su enfoque en la codicia en lugar de la humanidad, estos principios han proporcionado un marco para entender y enfrentar las desigualdades sociales y económicas que enfrentan las comunidades indígenas en México. En su núcleo, el marxismo ofrece una crítica al capitalismo e imperialismo, destacando la explotación y alienación inherentes en estos sistemas. Para los zapatistas, que han sido testigos de primera mano de los efectos devastadores de las políticas neoliberales y la globalización corporativa en sus comunidades, el marxismo proporciona un lenguaje para articular sus quejas y un conjunto de herramientas para desafiar el status quo. Un aspecto clave de la teoría marxista que resuena con el movimiento zapatista es su énfasis en la lucha de clases. El EZLN se ve a sí mismo como parte de una lucha más amplia contra la opresión capitalista, en la que los pueblos indígenas, los campesinos y otros grupos marginados se enfrentan a poderosas élites económicas y políticas. Al enmarcar su lucha en términos de clase, los zapatistas buscan unir fuerzas sociales dispares bajo una bandera común de resistencia.</p>
+
+<p>El EZLN ha estado en conflicto con el gobierno mexicano desde 1994. A lo largo de este tiempo, han tenido un aumento en la participación y aportaciones de las mujeres, a pesar de que las mujeres experimentaron muchas dificultades para ser activas, “Al principio, fue difícil para nosotras, no fue fácil, ya que tenemos en nuestras cabezas que nosotras como mujeres no podemos, fue difícil para nosotras comenzar como compañeras(EZLN:6<sup><a href="#fn1" id="ref1">1</a></sup>).” La participación de las mujeres no solo ha desafiado los roles de género tradicionales, sino que también ha inspirado a otras mujeres a ocupar puestos de liderazgo y afirmar sus derechos dentro de sus comunidades. Sin embargo, el camino hacia la igualdad de género dentro del EZLN no ha estado exento de desafíos. Las mujeres inicialmente enfrentaron resistencia y escepticismo por parte de algunos miembros masculinos del movimiento, quienes cuestionaron su capacidad para participar plenamente. Sin embargo, con el tiempo, las contribuciones de las mujeres han sido cada vez más reconocidas y valoradas dentro de la organización. En un comunicado emitido por un comité dentro del EZLN en 2005, “Ahora hay más compañeros y compañeras que están aprendiendo a gobernar. Y, aunque poco a poco, hay más mujeres que se dedican a este trabajo, pero aún falta respeto hacia las compañeras, y necesitan participar más en el trabajo de la lucha<sup><a href="#fn2" id="ref2">2</a></sup>.” A pesar de estos desafíos, el movimiento zapatista continúa inspirando y movilizando a individuos en todo el mundo en la lucha contra la opresión. Su compromiso con la autonomía, la solidaridad y la organización de base sirve como un poderoso ejemplo de resistencia contra la explotación capitalista y el imperialismo. A través de su lucha continua, los zapatistas nos recuerdan la importancia de desafiar los sistemas de opresión y construir movimientos inclusivos para el cambio social.</p>
+    </div>
+</div>
+ 
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> EZLN. “Radiozapatista.” Translated by Henry Gales, Autonomous Government II, radiozapatista.org/pdf/libros/Participation_of_Women_in_Autonomous_Government.pdf. Accessed 8 Mar. 2024.</li>
+                <li id="fn2">“Sixth Declaration of the Selva Lacandona.” Sixth Declaration of the Selva Lacandona, June 2005, enlacezapatista.ezln.org.mx/sdsl-en/. 
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+
+    {% endblock %}{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    INFORME
+</div>
+<div class="row" style="padding-top: 10px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>¿Qué es el Movimiento Zapatista?</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/whatIsZapatistaMovement'">in english</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='zapatista.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Fuente: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Fecha Enviado: 2.12.24 </em>
+    </div>
+
+<div class="row report-text">
+    <div class="col-md-10">
+        <p>Un movimiento nacido de frustraciones con el gobierno, Zapatistas o Ejército Zapatista de Liberación Nacional, EZLN es un grupo enfocado en la autonomía indígena mexicana y en derechos políticos/territoriales iguales. Directamente encendido debido a la implementación del Tratado de Libre Comercio de América del Norte (NAFTA), pero también nacido de cientos de años de frustración en torno a la privatización y dominación sobre las industrias. La creación de este movimiento ha permitido que más mujeres indígenas tengan voz y puedan crear sus propias organizaciones.</p>
+
+<p>Mientras que el EZLN se inspira en una variedad de fuentes, utiliza ideas del marxismo al criticar el capitalismo mexicano y su enfoque en la codicia en lugar de la humanidad, estos principios han proporcionado un marco para entender y enfrentar las desigualdades sociales y económicas que enfrentan las comunidades indígenas en México. En su núcleo, el marxismo ofrece una crítica al capitalismo e imperialismo, destacando la explotación y alienación inherentes en estos sistemas. Para los zapatistas, que han sido testigos de primera mano de los efectos devastadores de las políticas neoliberales y la globalización corporativa en sus comunidades, el marxismo proporciona un lenguaje para articular sus quejas y un conjunto de herramientas para desafiar el status quo. Un aspecto clave de la teoría marxista que resuena con el movimiento zapatista es su énfasis en la lucha de clases. El EZLN se ve a sí mismo como parte de una lucha más amplia contra la opresión capitalista, en la que los pueblos indígenas, los campesinos y otros grupos marginados se enfrentan a poderosas élites económicas y políticas. Al enmarcar su lucha en términos de clase, los zapatistas buscan unir fuerzas sociales dispares bajo una bandera común de resistencia.</p>
+
+<p>El EZLN ha estado en conflicto con el gobierno mexicano desde 1994. A lo largo de este tiempo, han tenido un aumento en la participación y aportaciones de las mujeres, a pesar de que las mujeres experimentaron muchas dificultades para ser activas, “Al principio, fue difícil para nosotras, no fue fácil, ya que tenemos en nuestras cabezas que nosotras como mujeres no podemos, fue difícil para nosotras comenzar como compañeras(EZLN:6<sup><a href="#fn1" id="ref1">1</a></sup>).” La participación de las mujeres no solo ha desafiado los roles de género tradicionales, sino que también ha inspirado a otras mujeres a ocupar puestos de liderazgo y afirmar sus derechos dentro de sus comunidades. Sin embargo, el camino hacia la igualdad de género dentro del EZLN no ha estado exento de desafíos. Las mujeres inicialmente enfrentaron resistencia y escepticismo por parte de algunos miembros masculinos del movimiento, quienes cuestionaron su capacidad para participar plenamente. Sin embargo, con el tiempo, las contribuciones de las mujeres han sido cada vez más reconocidas y valoradas dentro de la organización. En un comunicado emitido por un comité dentro del EZLN en 2005, “Ahora hay más compañeros y compañeras que están aprendiendo a gobernar. Y, aunque poco a poco, hay más mujeres que se dedican a este trabajo, pero aún falta respeto hacia las compañeras, y necesitan participar más en el trabajo de la lucha<sup><a href="#fn2" id="ref2">2</a></sup>.” A pesar de estos desafíos, el movimiento zapatista continúa inspirando y movilizando a individuos en todo el mundo en la lucha contra la opresión. Su compromiso con la autonomía, la solidaridad y la organización de base sirve como un poderoso ejemplo de resistencia contra la explotación capitalista y el imperialismo. A través de su lucha continua, los zapatistas nos recuerdan la importancia de desafiar los sistemas de opresión y construir movimientos inclusivos para el cambio social.</p>
+    </div>
+</div>
+ 
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> EZLN. “Radiozapatista.” Translated by Henry Gales, Autonomous Government II, radiozapatista.org/pdf/libros/Participation_of_Women_in_Autonomous_Government.pdf. Accessed 8 Mar. 2024.</li>
+                <li id="fn2">“Sixth Declaration of the Selva Lacandona.” Sixth Declaration of the Selva Lacandona, June 2005, enlacezapatista.ezln.org.mx/sdsl-en/. 
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+
+    {% endblock %}

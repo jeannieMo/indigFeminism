@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    REPORT
+</div>
+<div class="row" style="padding-top: 5px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Rituals and Practices</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/rituals_span'">en español</button>
+</div>
+
+
+<div class="row report-text">
+    <div class="col-md-10">
+        <p>Indigenous rituals and practices in Mexico offer a rich tapestry of traditions that can serve as powerful tools for protecting women within their communities. These practices often encompass spiritual, social, and healing dimensions, providing women with avenues for empowerment and resilience.</p>
+
+        <p>In many Indigenous communities, rituals are deeply ingrained in the fabric of everyday life, offering guidance, healing, and a sense of community. For example within the Mayan community, dreams are seen as having powerful healing and, “...are guidance to plan the future and to heal illness(Ciofalo: 62).” Despite the prevalence of Machismo, which marginalizes women, they are still valued as crucial roles within society because of these abilities.</p>
+        
+        <p>Traditional music and games that are not written are something women often take on the responsibility of preserving and transmitting these cultural practices. Arcelia’s story is an example of this; she is an Indigenous woman from Guadalupe who has been commissioned by the Mexican government to teach her community songs and dances, teaching hundreds of children her roots. As she does this, she keeps her grandmother’s voice in her ear, “...that some songs for reasons other than their particular intentions(Ciofalo: 55).” She battles with the gift she has of knowing these practices and wanting to share them with the world. As she teaches songs and dances to children in her community, keeping her cultural heritage alive. However, she grapples with the tension between cultural preservation and exploitation, recognizing the importance of safeguarding her traditions while navigating the complexities of cultural revitalization.</p>
+        
+        <p>Within the Nahua community of Mexico, tiçitl are women who perform rituals that are integral to healing the community. In the image below, a tiçitl is performing tlaolchayahualiztli(hurling of corn) before a weeping man.</p>
+        
+        <div class = "row">
+            <div class="col-md-9">
+                <img src="{{ url_for('static', filename='lineDrawing.png') }}" class="img-fluid">
+            </div>
+            <div class="subInfo"<em>Line drawing by author folio 78r of the Codex Magliabechiano.<sup><a href="#fn1" id="ref1">1</a></sup><br>Date Submitted: 2.12.24 </em></div>
+        </div>
+        <!--<p>Line drawing by author folio 78r of the Codex Magliabechiano.<sup><a href="#fn1" id="ref1">1</a></sup></p>-->
+
+        <p>By embracing and preserving these traditions, Ciofalo states “These efforts and revolutionary moments, known as Indigenous women’s ways of knowing and healing, epistemologies of the South against epistemicide and Indigenous psychologies are finding an emancipatory language to challenge imperialism(65).” Not only is fighting for your culture revolutionary but so is simply knowing. Reclaiming their cultural heritage, asserting their identities, and fostering resilience in the face of adversity. Moreover, these practices serve as bridges between past and present, connecting generations and nurturing a sense of collective identity and strength.</p>
+ 
+                
+    </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> Edward Anthony Polanco; “I Am Just a Tiçitl”: Decolonizing Central Mexican Nahua Female Healers, 1535–1635. Ethnohistory 1 July 2018; 65 (3): 441–463. doi: https://doi-org.ezproxy.cul.columbia.edu/10.1215/00141801-4451410  
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+    {% endblock %}

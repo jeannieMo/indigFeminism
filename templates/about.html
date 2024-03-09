@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
-
+ 
 {% block content %}
 <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
-
+  
 <div class="container">
 
     <div class="col-md-12" style="position: relative; padding: 0; margin: 0;">
@@ -12,25 +12,40 @@
             <button class="custom-button" style="color: #EEE5E9;" onclick="window.location.href='/acercaDe'">en español</button>
         </div> 
     </div>
-    <div class = "row missionWords">
-        <b>The Liberation and Safety of Indigenous Women </b><br>
-
-Founded in 2024, this organization has a mission to uphold indigenous sovereignty, preserve cultural traditions, and combat the widespread issue of femicide. <br><br>
-
-We define sovereignty as empowering indigenous communities to maintain control and protection over their ancestral lands. Defending territorial rights is paramount to our cause.<br><br>
-
-As noted by decolonial feminist and scholar Nuria Ciofalo, 'Focusing on these vivencias (experiences) and convivial dialogues...women can build transformative partnerships for community healing, survival, and resistance' (65). We hold this notion as integral to sustaining indigenous cultures. Women must lead at the forefront of this movement.<br><br>
-
-Our organization stands firmly against the rampant violence and killings decimating indigenous women across nations. Through advocacy, grassroots initiatives, and legal reforms, we strive to dismantle systemic injustices and ensure the liberation and safety of indigenous women in their homelands.<br><br><br>
+    <div class="row missionWords">
+        <b>La Liberación y Seguridad de Las Mujeres Indígenas (The Liberation and Safety of Indigenous Women)</b><br>
+        Femicide, a term coined by Diane E. H. Russell, is “...the killing of one or more females by one or more males because they are female(Russell, footnote1).”<br><br>
+    
+        Founded in 2024, this organization has a mission to uphold indigenous sovereignty, preserve cultural traditions, and combat the widespread issue of femicide. <br><br>
+    
+        We define sovereignty as empowering indigenous communities to maintain control and protection over their ancestral lands. Defending territorial rights is paramount to our cause.<br><br>
+    
+        As noted by decolonial feminist and scholar Nuria Ciofalo, 'Focusing on these vivencias (experiences) and convivial dialogues...women can build transformative partnerships for community healing, survival, and resistance'(65)(footnote2). We hold this notion as integral to sustaining indigenous cultures. Women must lead at the forefront of this movement.<br><br>
+    
+        Our organization stands firmly against the rampant violence and killings decimating indigenous women across nations. Through advocacy, grassroots initiatives, and legal reforms, we strive to dismantle systemic injustices and ensure the liberation and safety of indigenous women in their homelands.<br><br><br>
     </div>
+    
     <div class="row">
         <div class="col-md-4">
             <img src="static/femicideTab.jpeg" alt="Image 1" class="img-fluid">
         </div>
         <div class="col-md-4">
-            <img src="static/femicideTab.jpeg" alt="Image 2" class="img-fluid">
+            <img src="static/femTimeline.jpeg" alt="Image 2" class="img-fluid">
         </div>
     </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> Russell, Diana E. H. Defining Femicide, 26 Nov. 2012, www.dianarussell.com/f/Defining_Femicide_-_United_Nations_Speech_by_Diana_E._H._Russell_Ph.D.pdf.</li>
+                <li id="fn2">Ciofalo, Nuria. “Indigenous women’s ways of knowing and healing in Mexico.” Women &amp; Therapy, vol. 41, no. 1–2, 9 June 2017, pp. 52–68, https://doi.org/10.1080/02703149.2017.1323478. 
+                </li>
+              </ol>
+            </div>
+          </footer>
 </div>
 
 {% endblock %}

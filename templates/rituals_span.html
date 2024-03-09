@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    INFORME
+</div>
+<div class="row" style="padding-top: 5px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Rituales y Prácticas</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/rituals_en'">in english</button>
+</div>
+
+<div class="row report-text">
+    <div class="col-md-10">
+        <p>Los rituales y prácticas indígenas en México ofrecen un rico tapiz de tradiciones que pueden servir como herramientas poderosas para proteger a las mujeres dentro de sus comunidades. Estas prácticas a menudo abarcan dimensiones espirituales, sociales y curativas, brindando a las mujeres vías para el empoderamiento y la resiliencia.</p>
+
+        <p>En muchas comunidades indígenas, los rituales están profundamente arraigados en el tejido de la vida cotidiana, ofreciendo orientación, curación y un sentido de comunidad. Por ejemplo, dentro de la comunidad maya, los sueños se perciben como poseedores de una poderosa capacidad de sanación y, "...son guías para planificar el futuro y sanar enfermedades (Ciofalo: 62)". A pesar de la prevalencia del machismo, que margina a las mujeres, aún son valoradas como roles cruciales dentro de la sociedad debido a estas habilidades.</p>
+        
+        <p>La música tradicional y los juegos que no están escritos son algo que las mujeres a menudo asumen la responsabilidad de preservar y transmitir estas prácticas culturales. La historia de Arcelia es un ejemplo de esto; ella es una mujer indígena de Guadalupe que ha sido comisionada por el gobierno mexicano para enseñar a su comunidad canciones y bailes, enseñando a cientos de niños sus raíces. Mientras lo hace, mantiene la voz de su abuela en su oído, "...que algunas canciones por razones distintas a sus intenciones particulares (Ciofalo: 55)". Ella lucha con el don que tiene de conocer estas prácticas y querer compartirlas con el mundo. Al enseñar canciones y bailes a los niños de su comunidad, mantiene viva su herencia cultural. Sin embargo, lucha con la tensión entre la preservación cultural y la explotación, reconociendo la importancia de salvaguardar sus tradiciones mientras navega por las complejidades de la revitalización cultural.</p>
+        
+        <p>Dentro de la comunidad nahua de México, las tiçitl son mujeres que realizan rituales que son integrales para sanar la comunidad. En la imagen a continuación, una tiçitl está realizando el tlaolchayahualiztli (lanzamiento de maíz) frente a un hombre llorando.</p>
+        <div class = "row">
+            <div class="col-md-9">
+                <img src="{{ url_for('static', filename='lineDrawing.png') }}" class="img-fluid">
+            </div>
+            <div class="subInfo"><em>Dibujo a mano por el autor en el folio 78r del Códice Magliabechiano.<sup><a href="#fn1" id="ref1">1</a></sup><br>Fecha Enviado: 2.12.24 </em></div>
+        </div>
+        
+        <!--<p>Dibujo a mano por el autor en el folio 78r del Códice Magliabechiano.<sup><a href="#fn1" id="ref1">1</a></sup></p>-->
+        
+        <p>Al abrazar y preservar estas tradiciones, Ciofalo afirma "Estos esfuerzos y momentos revolucionarios, conocidos como formas de conocer y curar de las mujeres indígenas, epistemologías del Sur contra el epistemicidio y psicologías indígenas, están encontrando un lenguaje emancipatorio para desafiar el imperialismo (65)". No solo luchar por tu cultura es revolucionario, sino que también lo es simplemente saber. Reclamar su herencia cultural, afirmar sus identidades y fomentar la resiliencia frente a la adversidad. Además, estas prácticas sirven como puentes entre el pasado y el presente, conectando generaciones y fomentando un sentido de identidad y fuerza colectiva.</p>
+                      
+    </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> Edward Anthony Polanco; “I Am Just a Tiçitl”: Decolonizing Central Mexican Nahua Female Healers, 1535–1635. Ethnohistory 1 July 2018; 65 (3): 441–463. doi: https://doi-org.ezproxy.cul.columbia.edu/10.1215/00141801-4451410 
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+    {% endblock %}
+
+

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    REPORT
+</div>
+<div class="row" style="padding-top: 10px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Mestizaje and Indigenismo</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/mestizo_span'">en español</button>
+</div>
+ 
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='zapatista.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Source: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Date Submitted: 2.12.24 </em>
+    </div>
+<div class = "row report-text">
+    <div class ="col-md-10">
+
+        <p><i>“The measuring stick of mexicanidad, now within Mexico, was mestizaje.” - Joshua Lund</i></p>
+
+        <p>In a deliberate act of anti-indigenous sentiment, Mexico's governing authorities actively propagated the erasure of indigenous cultural heritage and racial identity. Rather than embracing and nurturing its indigenous heritage, the state exalted the Mestizo identity - a person of mixed race, especially one having Spanish and indigenous descent - elevating it to the peak of Mexican societal hierarchy. In their text, “Indigenous Women’s Struggle for Autonomy,” Rousseau and Morales Hudon explain that “The [Mexican] state promoted the ideology of mestizaje, the cultural and/or biological mixing of indigenous peoples and European descendants, as the foundation and common origin of Mexican national identity”(88). Therefore, already marginalized within a patriarchal societal framework, indigenous women have had to struggle not only with gender-based discrimination but also with forces of racism and colorism.</p>
+        
+        <p>This erasure is underscored by the legal framework articulated in <b>Article 3 and Article 6 of the UNESCO Declaration on Race and Racial Prejudice</b>, which denounces any form of discrimination based on race, color, or ethnic origin, and entrusts states with the responsibility for ensuring equal, human rights for all individuals and all groups. However, the very essence of the Mexican state's promotion of mestizaje goes against these principles, perpetuating a state of inequality and marginalization. For example, former Secretary of Public Education of Mexico José Vasconcelos went so far as to idolize mestizos as the “cosmic race” due to their potential of becoming an anti-racial race<sup><a href="#fn1" id="ref1">1</a></sup> - eerily similar to Franz Boas’ underlying racist thought that miscegenation could lead a black, ‘‘mongrel nation’’ into a true ‘‘racial democracy”.<sup><a href="#fn2" id="ref2">2</a></sup> </p>
+        
+        <p><b>Rather than fostering a genuinely inclusive and diverse society, the concept of mestizaje becomes a tool for enforcing a closer-to-white homogeneous national identity, marginalizing indigenous voices and experiences. The lived experiences of indigenous women continue to be battered by the enduring legacy of mestizaje, underscoring the need for genuine societal transformation and recognition of indigenous rights and identities.</b></p>
+        
+    </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> Lund, Joshua, 'Altamirano’s Burden', <i>The Mestizo State: Reading Race in Modern Mexico</i> (Minneapolis, MN, 2012; online edn, Minnesota Scholarship Online, 24 Aug. 2015), "https://doi.org/10.5749/minnesota/9780816656363.003.0002", accessed 8 Mar. 2024.</li>
+                <li id="fn2">Kamala Visweswaran, Un/common Cultures: Racism and the Rearticulation of Cultural Difference (Durham: Duke University Press, 2010) 
+                </li>
+            </ol>
+            </div>
+          </footer>
+</div>
+
+    {% endblock %}
+
+
+
+
+
+
+

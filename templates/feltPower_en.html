@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    REPORT
+</div>
+<div class="row" style="padding-top: 5px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Felt Power Theory</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/feltPower_span'">en español</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='feltPower.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Source: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Date Submitted: 2.12.24 </em>
+    </div>
+
+<div class = "row report-text">
+    <div class ="col-md-10">
+        <p>“If these women were to speak, they would need to create their own space(Million:269).”</p>
+
+        <p>In crafting an Indigenous feminist perspective rooted in felt theory, our organization asserts that Indigenous women must forge their pathways for expression and advocacy within their communities and society at large. Felt Theory coined by Dian Million is “An open-ended articulation of experience and identity that can be the foundation for the development of critical indigenous theory(291)<sup><a href="#fn1" id="ref1">1</a></sup>.”</p>
+        
+        <p>Drawing from Million's concept, we emphasize the imperative for Indigenous women to carve out spaces where their voices can be heard and their experiences valued.</p>
+        
+        <p>As articulated by Million, if Indigenous women are to articulate their truths, they must create their own platforms and avenues for expression. Our organization aligns with Million's premise that felt power theory provides a nuanced and dynamic framework for understanding Indigenous women's lived realities and identities.</p>
+        
+        <p>In our analysis, we recognize the unique intersectional challenges faced by Indigenous women, stemming from centuries of colonialism, imperialism, and systemic oppression. It is crucial to acknowledge the profound harm inflicted upon Indigenous women and to prioritize their agency and self-determination in the pursuit of justice and empowerment. By embracing felt power theory, our organization contends that the existence of Indigenous women is inherently revolutionary. Through reclaiming their spaces, voices, and narratives, Indigenous women not only challenge oppressive structures but also contribute to the development of critical Indigenous feminist theory. In essence, our organization stands in solidarity with Indigenous women, advocating for their right to self-expression and collective liberation. We believe that centering Indigenous women's felt power is essential for building a more just and equitable future for Indigenous communities and societies worldwide.</p>
+    </div>
+</div>
+
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn2">Whittaker, C. (2020), Felt power: Can Mexican Indigenous women finally be powerful?. Feminist Anthropology, 1: 288-303. https://doi.org/10.1002/fea2.12016 
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+    {% endblock %}

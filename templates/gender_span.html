@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    INFORME
+</div>
+<div class="row" style="padding-top: 5px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>Género y Machismo</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/gender_en'">in english</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='genderMach.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Fuente: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Fecha Enviado: 2.12.24 </em>
+    </div>
+
+<div class="row report-text">
+    <div class="col-md-10">
+        <p>“La movilización de las mujeres indígenas en espacios autónomos responde claramente a la necesidad de dar voz a las demandas distintas de las mujeres(Rousseau y Morales Hudon, 122)<sup><a href="#fn1" id="ref1">1</a></sup>.”</p>
+
+        <p>A pesar de la creación del movimiento Zapatista y sus objetivos de incluir y luchar por las mujeres, varias organizaciones han fallado en abordar completamente los problemas que enfrentan las mujeres indígenas. Entendemos la importancia de tener espacios para nosotras mismas. Esto viene después de ver organizaciones como CONAMI (Coordinadora Nacional de Mujeres Indígenas) donde las mujeres son capacitadas en liderazgo y participan en el gobierno local. Nos inspiramos en aquellas que nos precedieron y en aquellas que luchan junto a nosotras.</p>
+
+        <p>En nuestra organización, nuestro objetivo es empoderar activamente a las mujeres indígenas en todos los aspectos de sus vidas. Creemos en centrar el feminismo indígena como un marco para abordar las formas interseccionales de violencia enfrentadas por las mujeres indígenas, incluida la violencia de género, la marginación económica y el borrado cultural. También creemos en mantener prácticas indígenas con un enfoque en la sanación. Al proporcionar plataformas para que las mujeres indígenas amplifiquen sus voces, defiendan sus derechos y se movilicen para el cambio, nos esforzamos por construir una sociedad más justa y equitativa para todos los pueblos indígenas en México.</p>
+        
+            <b>Únete a nosotros en nuestro viaje hacia el empoderamiento colectivo y la liberación.</b></p>               
+    </div>
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> Rousseau, Stéphanie, and Anahi Morales Hudon. “Indigenous Women’s Struggle for Autonomy.” Indigenous Women’s Movements in Latin America: Gender and Ethnicity in Peru, Mexico, and Bolivia, PALGRAVE MACMILLAN, 2019.  
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+    {% endblock %}
+
+

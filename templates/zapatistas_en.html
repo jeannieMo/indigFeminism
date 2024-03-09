@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+<div class="row" style="padding-top: 13px;font-size: 14px; font-family:'Helvetica'">
+    REPORT
+</div>
+<div class="row" style="padding-top: 10px;font-size: 40px; font-family:'Helvetica'; color:#636940;">
+    <b>What is the Zapatista Movement?</b>
+    <button class="custom-button" style="color: rgba(119, 17, 119, 0.67);" onclick="window.location.href='/queEsZapatistaMovement'">en español</button>
+</div>
+
+<div class = "row">
+    <div class="col-md-9">
+        <img src="{{ url_for('static', filename='zapatista.png') }}" class="img-fluid">
+    </div>
+</div>
+
+<div class= "row subInfo" style="padding-left:20px;"><em> Source: https://www.npr.org/sections/pictureshow/2023/10/15/1203299832/indigenous-mexican-women-reclaim-their-power</div>
+    <div class="row subInfo"style="padding-left:20px;"><em>
+          Date Submitted: 2.12.24 </em>
+    </div>
+<div class = "row report-text">
+    <div class ="col-md-10">
+        <p>A movement born out of frustrations with the government, Zapatistas or Ejército Zapatista de Liberación Nacional, EZLN is a group focused on Indigenous Mexican autonomy and equal political/land rights. Directly ignited because of the implementation of law NAFTA( North American Free Trade Agreement) but also born out of hundreds of years of frustration around the privatization and domination over industries. The creation of this movement has allowed for more indigenous women to have a voice and be able to create their own organizations.</p>
+
+<p>While the EZLN draws inspiration from a variety of sources, it uses ideas of Marxism when critiquing Mexican capitalism and its focus on greed rather than humanity, these principles have provided a framework for understanding and confronting the social and economic inequalities faced by Indigenous communities in Mexico. At its core, Marxism offers a critique of capitalism and imperialism, highlighting the exploitation and alienation inherent in these systems. For the Zapatistas, who have witnessed firsthand the devastating effects of neoliberal policies and corporate globalization on their communities, Marxism provides a language to articulate their grievances and a set of tools to challenge the status quo. A key aspect of Marxist theory that resonates with the Zapatista movement is its emphasis on class struggle. The EZLN sees itself as part of a broader struggle against capitalist oppression, in which Indigenous peoples, peasants, and other marginalized groups are pitted against powerful economic and political elites. By framing their struggle in class terms, the Zapatistas seek to unite disparate social forces under a common banner of resistance.</p>
+
+<p>The EZLN has been in conflict with the Mexican government since 1994. Throughout this time, they have had an increase in women's participation as well as input, despite women experiencing many difficulties to be active, “In the beginning, it was difficult for us, it was not easy, since we have in our heads that we as women cannot  it was difficult for us to begin as compañeras(EZLN:6<sup><a href="#fn1" id="ref1">1</a></sup>).” Women’s participation has not only challenged traditional gender roles but has also inspired other women to take up leadership positions and assert their rights within their communities. However, the journey toward gender equality within the EZLN has not been without its challenges. Women initially faced resistance and skepticism from some male members of the movement, who questioned their ability to participate fully. Yet, over time, the contributions of women have become increasingly recognized and valued within the organization. In a statement put out by a committee within the EZLN in 2005, “Now there are more compañeros and compañeras who are learning to govern. And – even though little by little – there are more women going into this work, but there is still a lack of respect for the compañeras, and they need to participate more in the work of the struggle<sup><a href="#fn2" id="ref2">2</a></sup>.” Despite these challenges, the Zapatista movement continues to inspire and mobilize individuals worldwide in the fight against oppression. Their commitment to autonomy, solidarity, and grassroots organizing serves as a powerful example of resistance against capitalist exploitation and imperialism. Through their ongoing struggle, the Zapatistas remind us of the importance of challenging systems of oppression and building inclusive movements for social change.</p>
+
+    </div> 
+</div>
+<div class="row sourcesBckgd subInfo" style="padding-left: 10px;">
+    <div>   
+        <footer>
+            <div id="footnotes">
+              <p>Footnotes</p>
+              <ol>
+                <li id="fn1"> EZLN. “Radiozapatista.” Translated by Henry Gales, Autonomous Government II, radiozapatista.org/pdf/libros/Participation_of_Women_in_Autonomous_Government.pdf. Accessed 8 Mar. 2024.</li>
+                <li id="fn2">“Sixth Declaration of the Selva Lacandona.” Sixth Declaration of the Selva Lacandona, June 2005, enlacezapatista.ezln.org.mx/sdsl-en/. 
+                </li>
+              </ol>
+            </div>
+          </footer>
+</div>
+
+    {% endblock %}
