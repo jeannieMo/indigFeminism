@@ -33,6 +33,45 @@ def indigFem_page():
 def queEsindigFem_page():
     return render_template('queEsIndigFem.html')
 
+@app.route('/whatIsZapatistaMovement')
+def en_zap_page():
+    return render_template('zapatistas_en.html')
+
+@app.route('/queEsZapatistaMovement')
+def span_zap_page():
+    return render_template('zapatistas_span.html')
+
+@app.route('/feltPower_en')
+def en_felt_page():
+    return render_template('feltPower_en.html')
+
+@app.route('/feltPower_span')
+def span_felt_page():
+    return render_template('feltPower_span.html')
+@app.route('/gender_en')
+def en_gender_page():
+    return render_template('gender_en.html')
+
+@app.route('/gender_span')
+def span_gender_page():
+    return render_template('gender_span.html')
+
+@app.route('/rituals_en')
+def en_rituals_page():
+    return render_template('rituals_en.html')
+
+@app.route('/rituals_span')
+def span_rituals_page():
+    return render_template('rituals_span.html')
+
+@app.route('/mestizo_en')
+def en_mestizo_page():
+    return render_template('mestizo_en.html')
+
+@app.route('/mestizo_span')
+def span_mestizo_page():
+    return render_template('mestizo_span.html')
+
 @app.route('/contactUs')
 def contactUs_page():
     return render_template('contactUs.html')
